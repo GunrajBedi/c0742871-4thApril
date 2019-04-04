@@ -1,4 +1,10 @@
 //this is js file
+
+let a=9;
+let b= 2*2;
+console.log(b);
+
+
 console.log('heloo.....!!');
 
 var http = require('http');
