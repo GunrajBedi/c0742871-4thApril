@@ -5,6 +5,15 @@ var user={
     website: "java2s.com"
 
 };
-for (key in user){
-    console.log(key);
-}
+
+var http = require('http');
+http.createServer(function (req, res) {
+    res.writeHead(200,{'Content-Type':'text/plain'});
+    //res.end('hello world');
+    for (key in user){
+       res.write(key);
+    }
+    res.end();
+
+
+}).listen(8082);
